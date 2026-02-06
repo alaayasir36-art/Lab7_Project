@@ -3,7 +3,7 @@ require "db.php";
 
 // 1. Check if user already has a cookie. If yes, send to dashboard.
 if (isset($_COOKIE['username'])) {
-    header("Location: dashboard.php");
+    header("Location: admin.php");
     exit;
 }
 
@@ -54,4 +54,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <p>No account? <a href="signup.php">Sign up</a></p>
 
 </body>
+
 </html>
