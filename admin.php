@@ -143,7 +143,7 @@ while ($row = mysqli_fetch_assoc($result)) {
             <a class='edit-btn' href='update_data.php?student_number={$row['student_number']}'>Update</a>
             <a class='delete-btn'
                href='delete_student.php?student_number={$row['student_number']}'
-               onclick=\"return confirm('Delete this student?');\">
+               onclick=\"return confirm('Do you want to delete this student?');\">
                Delete
             </a>
           </td>";
@@ -158,3 +158,4 @@ while ($row = mysqli_fetch_assoc($result)) {
 </body>
 
 </html>
+
